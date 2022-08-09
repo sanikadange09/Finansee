@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <style>
+        body{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            height: 1000px;
+            background: url('img/WhatsApp\ Image\ 2021-11-08\ at\ 8.53.10\ PM.jpeg');
+            background-repeat: no-repeat;
+            background-size: 1350px 800px;
+        }
+        .header{
+            /* border: 2px solid black; */
+            background-color: #b5cccd;
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid black; */
+            position: absolute;
+            left: 40px;
+            top: 16px;
+        }
+        .left img{
+            width: 80px;
+            margin-left: 3px;
+        }
+        .left div{
+            font-family: Arial, Helvetica, sans-serif;
+            /* border: 2px solid black; */
+            line-height: 34px;
+            font-size: 28px;
+            margin: 4px -15px;
+            text-align: center;
+            color: black;
+        }
+        .mid{
+            display: block;
+            /* border: 2px solid black; */
+            width: 50%;
+            margin: 20px auto;
+        }
+        .right{
+            display: inline-block;
+            /* border: 2px solid black; */
+            position: absolute;
+            right: 34px;
+            top: 36px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            /* display: inline-block; */
+            color: black;
+            text-decoration: none;
+            padding: 34px 16px;
+        }
+        .navbar li a:hover, .navbar li a.active {
+            /* display: inline-block; */
+            text-decoration: underline;
+            color: grey;
+        }
+        .btn{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 9px;
+            color: black;
+            background-color: whitesmoke;
+            padding: 6px 8px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: white;
+        }
+        .container{
+            /* border: 2px solid black; */
+            /* background-color: whitesmoke; */
+            margin: 60px auto;
+            padding: 10px 125px;
+            width: 48%;
+            border-radius: 20px;
+        }
+        .container h4{
+            margin: auto;
+            text-align: center;
+            font-size: 38px;
+        }
+        .container p{
+            /* border: 2px solid black; */
+            font-size: 30px;
+            margin: 20px -75px;
+        }
+        .aboutWeb{
+            border: 2px solid black;
+            display: inline-block;
+            margin: 0px 0px 0px 30px;
+            padding: 4px 4px 4px 4px;
+            background-color: whitesmoke;
+            width: 65%;
+            height: 72%;
+        }
+        .aboutWeb p{
+            border: 2px solid black;
+            margin: 10px 14px;
+            padding: 2px 35px;
+            font-size: 20px;
+        }
+        .aboutWeb ul{
+            border: 2px solid black;
+            margin: 10px 14px;
+            padding: 15px 30px;
+        }
+        .aboutWeb ul li{
+            border: 2px solid black;
+            margin: 4px 6px;
+            padding: 10px 12px;
+            font-size: 19px;
+        }
+        /* .aboutWeb div{
+            border: 2px solid black;
+        } */
+        .mistakes{
+            border: 2px solid black;
+            display: inline-block;
+            margin: 30px 0px 0px 30px;
+            padding: 4px 4px 4px 4px;
+            width: 65%;
+            height: 75%;
+        }
+        .mistakes h5{
+            border: 2px solid black;
+            text-align: center;
+            margin: 8px 15px;
+        }
+        .mistakes p{
+            border: 2px solid black;
+            margin: 15px 20px;
+            padding: 8px 10px;
+        }
+        .mistakes ul li{
+            border: 2px solid black;
+            margin: 4px 6px;
+            padding: 10px 12px;
+            font-size: 19px;
+        }
+        .vl{
+            border-left: 4px solid grey;
+            height: 600%;
+            margin: 0px 0px 0px 965px;
+            position: absolute;
+            top: 345px;
+        }
+        .chatbot{
+            background-color: whitesmoke;
+            border: 2px solid black;
+            display: inline-block;
+            position: fixed;
+            bottom: 6px;
+            left: 1250px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/istockphoto-1067190046-612x612.jpg" alt="">
+            <div>FinanSee</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="Articles.html">Articles</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="ContactUs.html">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#Login">Log in</button>
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#SignUp">Sign up</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h4>
+            <strong>
+                Welcome to FinanSee.
+            </strong>
+        </h4>
+        <div>
+            <p>Expertise you need, <strong> Service you Deserve.</strong></p>
+        </div>
+    </div>
+
+    <div class="aboutWeb">
+        <div>
+            <p><strong> FinanSee </strong> fills a universal need. Everybody wants to meet their financial goals and to have more happiness. We at <strong> FinanSee </strong> help you to do just that with our comprehensive financial planning service. We hope that you will not only find a new and fascinating relationship with us through our financial planning, wealth management and investment asset allocation advisory services, but also a significant way to a richer fuller life.</p>
+        </div>
+
+        <div>
+            <ul>
+                <li>You want to set new thoughts, new visions and new ambitions on your personal finance.</li>
+                <li>You want to achieve your financial goals, not to just manage your assets.</li>
+                <li>You want to make the principles of finance & investing easy to apply in your daily life.</li>
+                <li>You want to get out of mundane investment rut.</li>
+                <li>You want to make financial and investment related decisions quickly and easily with clarity.</li>
+                <li>You want to take a financial and investment decision for which you need not regret in the future.</li>
+                <li>You want to take a financial and investment decision that will not disturb your peace of mind and sleep.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mistakes">
+        <div>
+            <h5>Have you made similar mistakes when dealing with your money?</h5>
+        </div>
+
+        <div>
+            <p>Before enrolling for our Comprehensive <strong>Financial Planning / Wealth Management / Investment Asset Allocation Advisory Services </strong>, people have made one or more of the following mistakes.</p>
+        </div>
+
+        <div>
+            <ul>
+                <li>Does your busy professional schedule offer you no time to monitor your personal finance? Is lack of time making you go crazy in your attempt to plan your finance?</li>
+                <li>Do you fear that, the financial decisions you take could be wrong?</li>
+                <li>Do you have different agents or advisors for different investment products (insurance, mutual funds, stocks…….), and none of them knows your complete picture?</li>
+                <li>Do you think that the advertisements don’t create a rosy picture about the investment product and it provides only the facts?</li>
+                <li>Do you believe that sales presentations are not sugar coated, they puts forward both the plus and minus of a scheme?</li>
+                <li>Are you under the impression that trading or timing the market is a quick way for creating wealth?</li>
+                <li>Have you invested in a scheme just to copycat a friend or colleague (peer pressure) and later felt that the results of the schemes are not desirous?</li>
+            </ul>
+        </div>
+
+        <div>
+            <p>If you have answered <strong> Yes </strong> to any of the above questions, then you are in need of a <strong>Comprehensive Financial Planning.</strong></p>
+        </div>
+    </div>
+
+    <div class="vl"></div>
+
+    <div class="chatbot">
+        Chat Bot 
+    </div>
+
+    <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpLabel">SignUp</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="exampleFormControlInput1" class="form-label col-sm-2 col-form-label">Username</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="exampleFormControlInput1"/>
+
+                        </div>
+                        </div>
+                        <div class="mb-3 row">
+                                <label for="exampleFormControlInput1" class="form-label col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com" />
+                                </div>
+                            </div>
+        
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword" />
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword" />
+                                </div>
+                            </div>
+
+                        </div>
+        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-success">
+                                SignUp
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="LoginLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginLabel">Login</h5>
+                </div>
+
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="exampleFormControlInput1" class="form-label col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

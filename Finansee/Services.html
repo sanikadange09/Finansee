@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            height: 1000px;
+            /* background: url('img/istockphoto-1134018566-612x612.jpg');
+            background-repeat: no-repeat;
+            background-size: 1350px 800px; */
+        }
+        .header{
+            /* border: 2px solid black; */
+            background-color: #b5cccd;
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid black; */
+            position: absolute;
+            left: 40px;
+            top: 16px;
+        }
+        .left img{
+            width: 80px;
+        }
+        .left div{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 16px;
+            font-size: 20px;
+            text-align: center;
+            color: #636161;
+        }
+        .mid{
+            display: block;
+            /* border: 2px solid black; */
+            width: 50%;
+            margin: 20px auto;
+        }
+        .right{
+            display: inline-block;
+            /* border: 2px solid black; */
+            position: absolute;
+            right: 34px;
+            top: 36px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            /* display: inline-block; */
+            color: black;
+            text-decoration: none;
+            padding: 34px 16px;
+        }
+        .navbar li a:hover, .navbar li a.active {
+            /* display: inline-block; */
+            text-decoration: underline;
+            color: grey;
+        }
+        .btn{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 9px;
+            color: black;
+            background-color: whitesmoke;
+            padding: 6px 8px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: white;
+        }
+        .vl{
+            border-left: 4px solid grey;
+            height: 600%;
+            margin: 0px 0px 0px 965px;
+            position: absolute;
+            top: 140px;
+        }
+
+        .services{
+            /* border: 2px solid black; */
+            /* display: inline-block; */
+            text-align: center;
+            /* height: 33%; */
+            font-size: 40px;
+            color: grey;
+            width: 33%;
+            margin: 45px 4px 4px 255px;
+            /* padding: 4px 4px; */
+        }
+
+        .image{
+            display: inline-block;
+            /* border: 2px solid black; */
+            margin: 35px 0px 0px 85px;
+        }
+
+        .container1{
+            border: 2px solid black;
+            display: inline-block;
+            margin: 40px 420px 0px 50px;
+            padding: 4px 4px 4px 4px;
+            height: 110%;
+            width: 65%;
+        }
+
+        .firstline{
+            border: 2px solid black;
+            /* display: inline-block; */
+            margin: 0px 16px;
+            height: 33%;
+            width: 96%;
+        }
+
+        .box1{
+            border: 2px solid black;
+            display: inline-block;
+            margin: 8px 8px;
+            height: 95%;
+            width: 46%;
+            background-color: whitesmoke;
+        }
+
+        .box2{
+            border: 2px solid black;
+            display: inline-block;
+            margin: 8px 18px;
+            height: 95%;
+            width: 46%;
+            background-color: whitesmoke;
+        }
+
+        .firstline h4{
+            border: 2px solid black;
+            /* display: inline-block; */
+            text-align: center;
+            margin: 4px 4px;
+            padding: 4px 4px;
+            color: white;
+            background-color: grey;
+        }
+
+        .secondline{
+            border: 2px solid black;
+            /* display: inline-block;  */
+            margin: 0px 16px;
+            height: 33%;
+            width: 96%;
+        }
+
+        .box3{
+            border: 2px solid black;
+            display: inline-block;
+            margin: 8px 8px;
+            height: 95%;
+            width: 46%;
+            background-color: whitesmoke;
+        }
+
+        .box4{
+            border: 2px solid black;
+            display: inline-block;
+            margin: 8px 18px;
+            height: 95%;
+            width: 46%;
+            background-color: whitesmoke;
+        }
+
+        .secondline h4{
+            border: 2px solid black;
+            /* display: inline-block; */
+            text-align: center;
+            margin: 4px 4px;
+            padding: 4px 4px;
+            color: white;
+            background-color: grey;
+        }
+        
+        .thirdline{
+            border: 2px solid black;
+            /* display: inline-block;  */
+            margin: 0px 16px;
+            height: 33%;
+            width: 96%;
+        }
+
+        .box5{
+            border: 2px solid black;
+            display: inline-block;
+            margin: 8px 8px;
+            height: 95%;
+            width: 46%;
+            background-color: whitesmoke;
+        }
+
+        .box6{
+            border: 2px solid black;
+            display: inline-block;
+            margin: 8px 18px;
+            height: 95%;
+            width: 46%;
+            background-color: whitesmoke;
+        }
+
+        .thirdline h4{
+            border: 2px solid black;
+            /* display: inline-block; */
+            text-align: center;
+            margin: 4px 4px;
+            padding: 4px 4px;
+            color: white;
+            background-color: grey;
+        }
+
+        .chatbot{
+            background-color: whitesmoke;
+            border: 2px solid black;
+            display: inline-block;
+            position: fixed;
+            bottom: 6px;
+            left: 1250px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/istockphoto-1067190046-612x612.jpg" alt="">
+            <div>FinanSee</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="Home_Page.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="Articles.html">Articles</a></li>
+                <li><a href="#" class="active">Services</a></li>
+                <li><a href="ContactUs.html">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Log in</button>
+            <button class="btn">Sign up</button>
+        </div>
+    </header>
+
+    <div class="vl"></div>
+
+    <div class="services">
+        <h3>Services</h3>
+    </div>
+
+    <div class="image">
+        <img src="img/30-minutes-discussion_banner.jpg" alt="service_banner" width="750" height="300">
+    </div>
+
+    <div class="container1">
+
+        <div class="firstline">
+
+            <div class="box1">
+                <div class="left1">
+                    <h4>Financial Planning</h4>
+                </div>
+            </div>
+            
+            <div class="box2">
+                <div class="right1">
+                    <h4>Wealth Management</h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="secondline">
+
+            <div class="box3">
+                <div class="left2">
+                    <h4>Money Management Coaching</h4>
+                </div>
+            </div>
+            
+            <div class="box4">
+                <div class="right2">
+                    <h4>Retirement Planning</h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="thirdline">
+
+            <div class="box5">
+                <div class="left3">
+                    <h4>Webinar</h4>
+                </div>
+            </div>
+            
+            <div class="box6">
+                <div class="right3">
+                    <h4>Online Workshop</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="chatbot">
+        Chat Bot 
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        #header1{
+            margin-left: 0;
+            margin-right: 0;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header2{
+            margin-left: 0;
+            margin-right: 0;
+            font-family: sans-serif;
+            height: 500px;
+            padding: 20px;
+        }
+        #leftside{
+            width: 45%;
+            float: left;
+            padding: 20px;
+            height: 400px;
+            margin: 5px;
+            text-align: center;
+        }
+        #rightside{
+            width: 45%;
+            float: left;
+            padding: 20px;
+            text-align: left;
+            height: 400px;
+            margin: 5px;
+        }
+        .inputs{
+            height: 40px;
+            width: 45%;
+            margin-top: 5px;
+            border: 0px;
+            box-shadow: 0px 2px 2px rgb(196, 196, 196);
+        }
+        #submitbtn{
+            background-color: rgb(107, 18, 104);
+            color: rgb(255, 255, 255);
+            width: 200px;
+            font-size: 18px;
+            padding-left: 0px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: 1px solid rgb(107, 18, 104);
+            border-radius: 5px;
+            margin-top: 20px;
+            height: 50px;
+        }
+        #submitbtn:hover{
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            width: 300px;
+            background-color: rgb(77, 18, 67);
+            border: 1px solid white;
+            transition: all 1000ms ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="header1">
+        <span style="font-size: 10px;color: rgb(165, 165, 165);">GET IN TOUCH</span>
+        <h1 style="color: rgb(110, 19, 110);margin-top: -3px;">Contact Us</h2>
+    </div>
+    <div >    
+    <div id="header2">
+        <div id="leftside">
+            <form style="margin-top: 15px;">
+                <input type="text" class="inputs" placeholder="First name">
+                <input type="text" class="inputs" placeholder="Last name">
+                <input type="text" class="inputs" placeholder="Email address" style="width: 92%;">
+                <textarea class="inputs" placeholder="Write your message." cols="30" rows="10" style="height: 150px;width: 92%;"></textarea>
+                <input type="submit" id="submitbtn" value="Send Message">
+            </form>
+        </div>
+        <div id="rightside">
+            <div style="margin-left: 100px;margin-right: 100px;">
+                <h2>Need to know more on details? Call Us <a href="tel://13923929482" style="color: rgb(126, 29, 126);text-decoration: none;">+1 392 3929 482</a></h2>
+                <p style="color: gray; font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, distinctio! Harum quibusdam nisi, illum nulla aspernatur <a href="#">voluptas nam praesentium</a> aut quidem aperiam, quae non tempora recusandae voluptatibus fugit impedit.</p>
+            </div>         
+        </div>
+    </div>
+</body>
+</html>

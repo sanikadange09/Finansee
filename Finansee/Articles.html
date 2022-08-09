@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            height: 1000px;
+            /* background: url('img/istockphoto-1134018566-612x612.jpg');
+            background-repeat: no-repeat;
+            background-size: 1350px 800px; */
+        }
+        .header{
+            /* border: 2px solid black; */
+            background-color: #b5cccd;
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid black; */
+            position: absolute;
+            left: 40px;
+            top: 16px;
+        }
+        .left img{
+            width: 80px;
+        }
+        .left div{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 16px;
+            font-size: 20px;
+            text-align: center;
+            color: grey;
+        }
+        .mid{
+            display: block;
+            /* border: 2px solid black; */
+            width: 50%;
+            margin: 20px auto;
+        }
+        .right{
+            display: inline-block;
+            /* border: 2px solid black; */
+            position: absolute;
+            right: 34px;
+            top: 36px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            /* display: inline-block; */
+            color: black;
+            text-decoration: none;
+            padding: 34px 16px;
+        }
+        .navbar li a:hover, .navbar li a.active {
+            /* display: inline-block; */
+            text-decoration: underline;
+            color: grey;
+        }
+        .btn{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 9px;
+            color: black;
+            background-color: whitesmoke;
+            padding: 6px 8px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: white;
+        }
+        .chatbot{
+            background-color: whitesmoke;
+            border: 2px solid black;
+            display: inline-block;
+            position: fixed;
+            bottom: 6px;
+            left: 1250px;
+            font-size: 20px;
+        }
+        .articles{
+            border: 2px solid black;
+            margin: 25px 15px;
+            padding: 15px 10px;
+            display: inline-block;
+        }
+        .articles div{
+            /* display: inline-block; */
+            border: 2px solid black;
+            border-radius: 35px;
+            margin: 25px 35px;
+            padding: 15px 35px;
+            text-decoration: none;
+            color: black;
+        }
+        .articles div a{
+            color: grey;
+            text-decoration: none;
+        }
+        .articles div a:hover{
+            color: black;
+            /* background-color: black; */
+        }
+        .articles h4{
+            border: 2px solid black;
+            text-align: center;
+            color: grey;
+            font-size: 40px;
+            position: relative;
+            top: -15px;
+        }
+        .midRight{
+            border: 3px solid black;
+            color: red;
+            position: fixed;
+            display: block;
+            /* float: right; */
+            margin: 0px 0px 0px 1052px;
+            padding: 16px 86px;
+        }
+        .midRight h3{
+            margin: 0px 35px;
+            border: 2px solid grey;
+            text-align: center;
+            font-size: 25px;
+        }
+        .midRight div{
+            border:2px solid grey;
+            padding: 35px 4px;
+            margin: 40px -75px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/istockphoto-1067190046-612x612.jpg" alt="">
+            <div>FinanSee</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="Home_Page.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#" class="active">Articles</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="ContactUs.html">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Log in</button>
+            <button class="btn">Sign up</button>
+        </div>
+    </header>
+
+    <!-- <div class="midRight">
+        <h3>News</h3>
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+        <div class="box4">Box 4</div>
+    </div> -->
+
+    <div class="articles">
+        <h4>All Articles</h4>
+        <ul>
+            <div class="A1">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/how-to-invest-lumpsum/" target="_blank" rel="noopener noreferrer">Investing a Lumpsum: How to do it the Right Way?</a></li>
+            </div>
+            <div class="A2">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/safe-exit-strategy/" target="_blank" rel="noopener noreferrer">What if the Stock Market Crashes Days Before I Redeem for My Financial Goal?—The Safest Strategy to Exit the Market!</a></li>
+            </div>
+            <div class="A3">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/analyse-stock-ipo/" target="_blank" rel="noopener noreferrer">Trouble Analysing the IPO Offer Document? What Matters the Most While You Invest?</a></li>
+            </div>
+            <div class="A4">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/should-you-bitcoin-invest/" target="_blank" rel="noopener noreferrer">Right Time to Invest in Bitcoin/Cryptocurrency? Consider These Before You Do!</a></li>
+            </div>
+            <div class="A5">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/debt-funds-risky/" target="_blank" rel="noopener noreferrer">Are Debt Funds Becoming as Risky as Equity Mutual Funds?</a></li>
+            </div>
+            <div class="A6">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/why-esg-funds/" target="_blank" rel="noopener noreferrer">Why are Financial Institutions Focusing on ESG Based Funds? The Rise of Responsible Investing</a></li>
+            </div>
+            <div class="A7">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/portfolio-review-frequency/" target="_blank" rel="noopener noreferrer">How Frequently Should You Review Your Mutual Fund SIP? And Rebalance Investment Portfolio?</a></li>
+            </div>
+            <div class="A8">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/mutual-fund-invest-lumpsum/" target="_blank" rel="noopener noreferrer">When is the Right Time to Make Lumpsum Investment? Is Stock Market Recovery a Sign?</a></li>
+            </div>
+            <div class="A9">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/education-retirement-investment/" target="_blank" rel="noopener noreferrer">How to Choose the Right Investment Products for Your Retirement &amp; Kid’s Education?</a></li>
+            </div>
+            <div class="A10">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/mind-over-money-3/" target="_blank" rel="noopener noreferrer">Do Not Invest! A Mind Over Money Session for Successful Investors-Part 3</a></li>
+            </div>
+            <div class="A11">
+                <li class="scr_eff_hidden"><a href="https://www.holisticinvestment.in/company-FD-emergency-
+                fund/" target="_blank" rel="noopener noreferrer">Liquid Funds vs. Company FDs: Which is the Best to Invest Your Emergency Fund?</a></li>
+            </div>
+            </ul>
+    </div>
+
+    <div class="chatbot">
+        Chat Bot 
+    </div>
+</body>
+</html>
